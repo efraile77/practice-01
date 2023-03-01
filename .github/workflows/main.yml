@@ -1,6 +1,7 @@
 name: my-action
 on: push
-jobs: run-aplication
+jobs: 
+  run-aplication:
    runs-on: ubuntu-latest
    steps:
       - name: access git

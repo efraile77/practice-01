@@ -10,6 +10,8 @@ jobs:
         run: npm ci
       - name: run lint
         run: npm run lint
+      - name: run init
+        run: npm run init
       - name: run test 
         run: npm run test
       - name: Run build

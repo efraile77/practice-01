@@ -6,10 +6,12 @@ jobs:
    steps:
       - name: access git
         uses: actions/checkout@v3
+      - name: install dependencies
+        run: npm ci
       - name: run lint
-        run: lint
+        run: npm lint
       - name: run test 
-        run: test
+        run: npm test
       - name: Run build
-        run: build
+        run: npm build
       

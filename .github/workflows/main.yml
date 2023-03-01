@@ -12,5 +12,5 @@ jobs:
         run: npm run test
       - name: Run build
         run: npm run build
-      - name deploy
+      - name: deploy
         run: echo "Deploying ..."

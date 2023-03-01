@@ -1,0 +1,14 @@
+name: my-action
+on: push
+jobs: run-aplication
+   runs-on: ubuntu-latest
+   steps:
+      - name: access git
+        uses: actions/checkout@v3
+      - name: run lint
+        run: lint
+      - name: run test 
+        run: test
+      - name: Run build
+        run: build
+      
